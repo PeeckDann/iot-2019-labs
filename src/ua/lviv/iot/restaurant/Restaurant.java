@@ -23,14 +23,8 @@ public class Restaurant {
 
 	public Restaurant(String name, int numberOfDishesOnTheMenu, String address, int numberOfTables,
 			double bookingPriceInDollars, double bookingPriceInGryvnias, String cuisine, int numberOfHalls) {
-		this.name = name;
-		this.numberOfDishesOnTheMenu = numberOfDishesOnTheMenu;
-		this.address = address;
-		this.numberOfTables = numberOfTables;
-		this.bookingPriceInDollars = bookingPriceInDollars;
-		this.bookingPriceInGryvnias = bookingPriceInGryvnias;
-		this.cuisine = cuisine;
-		this.numberOfHalls = numberOfHalls;
+		this.resetValues(name, numberOfDishesOnTheMenu, address, numberOfTables, bookingPriceInDollars,
+				bookingPriceInGryvnias, cuisine, numberOfHalls);
 	}
 
 	public static int getProfitability() {

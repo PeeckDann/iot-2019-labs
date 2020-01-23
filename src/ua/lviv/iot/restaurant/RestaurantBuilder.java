@@ -19,17 +19,17 @@ public class RestaurantBuilder {
 		Restaurant.printStaticProfitability();
 		firstRestaurant.printProfitability();
 
-		Restaurant arrayOfRestaurants[] = new Restaurant[4];
+		Restaurant restaurants[] = new Restaurant[4];
 
 		for (int i = 0; i <= 3; ++i) {
-			Restaurant elementOfArray = new Restaurant("CLaude Monet", 100 + 5 * i, "Bandery st. 17", 30 + 2 * i,
+			Restaurant restaurant = new Restaurant("CLaude Monet", 100 + 5 * i, "Bandery st. 17", 30 + 2 * i,
 					50.50, 1250.40, "French", 1 + i);
-			arrayOfRestaurants[i] = elementOfArray;
+			restaurants[i] = restaurant;
 		}
 
-		for (Restaurant itRestaurant : arrayOfRestaurants) {
+		for (Restaurant restaurant : restaurants) {
 			System.out.println("------------------------------------------------------------------------");
-			System.out.println(itRestaurant.toString());
+			System.out.println(restaurant.toString());
 		}
 	}
 
